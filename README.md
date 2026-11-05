@@ -11,5 +11,12 @@ The program prints Result: followed by the answer.
 Exit: Ctrl+c
 
 ## Test
-Input 6, *, 7
-Expected outcome 42
+Run ./check.sh
+
+Expected results
+
+Add: 2 + 3 = 5
+Subtract: 7 - 3 = 4
+Divide: 6 / 2 = 3
+Multiply: 6 * 5 = 30
+Divide Uneven: 5 / 2 = 2.5
