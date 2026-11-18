@@ -25,8 +25,9 @@ submit the final CI run as a separate PDF or screenshot.
                                         REQUIREMENTS.md - Contains 6 requirements for calculator.py
                                         README.md - Contains brief description of how use calculator and what it does
                                         .gitignore - Contains files to be ignored by git]
-- Feature branch and PR: [name, URL and saved PR file in evidence/]
-- Self-review: [what you checked in the diff and the outcome]
+- Feature branch and PR: [Coursework,(https://github.com/thodges678/Calculator/pull/3), Inital Feature Branch PR.pdf]
+- Self-review: [Added Evidence files before-commit.txt holding the commit hash, and local-before.txt holding the test result.
+As well as the test_batch_calculator.py file and editing EVIDENCE.md]
 
 ## 2. Test failure, diagnosis and fix
 
@@ -39,7 +40,7 @@ missing feature is acceptable; retain the test in the final suite.
 - Failing/passing local runs: [commands, outcomes and saved log paths]
 - Failing/passing CI runs: [URLs, matching commit hashes and saved files in evidence/]
 - CI diagnosis: [event, runner, job, failed step and useful log message]
-- Cause and implementation fix: [explain what changed and why]
+- Cause and implementation fix: [explain what changed and why]i don
 
 ## 3. Repeatable checks and local hook
 
