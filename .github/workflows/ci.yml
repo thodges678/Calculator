@@ -1,7 +1,7 @@
 name: Calculator CI
 
 on:
-  pull_request
+  pull_request:
     branches:[main]
 
 permissions:
