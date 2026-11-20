@@ -16,10 +16,18 @@ submit the final CI run as a separate PDF or screenshot.
 
 ## 1. Starting point and Git review
 
-- Starting commit: [28a1669]
-- Reused lab files, tests and examples: [identify and acknowledge]
-- Feature branch and PR: [name, URL and saved PR file in evidence/]
-- Self-review: [what you checked in the diff and the outcome]
+- Starting commit: [59dbd9338f8d6f9af7189835a5e5aa79bc314aac]
+- Reused lab files, tests and examples: [calculator.py -Allows for input of two numbers and a operations of add, subtract, mutliply     or  divide
+                                        run.sh - Bash file to allow calculator to be run from ./run.sh
+                                        check.sh - Bash file to display whether a test is passed
+                                        test_calculator.py - Pytest file to test calculator functions
+                                        requirements-dev.txt - Contains required software to run the code
+                                        REQUIREMENTS.md - Contains 6 requirements for calculator.py
+                                        README.md - Contains brief description of how use calculator and what it does
+                                        .gitignore - Contains files to be ignored by git]
+- Feature branch and PR: [Coursework,(https://github.com/thodges678/Calculator/pull/3), Inital Feature Branch PR.pdf]
+- Self-review: [Added Evidence files before-commit.txt holding the commit hash, and local-before.txt holding the test result.
+As well as the test_batch_calculator.py file and editing EVIDENCE.md]
 
 ## 2. Test failure, diagnosis and fix
 
@@ -32,7 +40,7 @@ missing feature is acceptable; retain the test in the final suite.
 - Failing/passing local runs: [commands, outcomes and saved log paths]
 - Failing/passing CI runs: [URLs, matching commit hashes and saved files in evidence/]
 - CI diagnosis: [event, runner, job, failed step and useful log message]
-- Cause and implementation fix: [explain what changed and why]
+- Cause and implementation fix: [explain what changed and why]i don
 
 ## 3. Repeatable checks and local hook
 

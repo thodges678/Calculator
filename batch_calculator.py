@@ -18,4 +18,19 @@ def process_calculation(operation, a_text, b_text):
     Check errors in order: UNKNOWN_OPERATION, INVALID_NUMBER, DIVISION_BY_ZERO.
     See the brief for the full contract. You may add small helper functions.
     """
-    raise NotImplementedError("Complete process_calculation for the coursework")
+    ops ={"add": add, "subtract": subtract, "multiply": multiply, "divide": divide}
+
+    if operation not in ops:
+        return("ERROR", "", "UNKOWN_OPERATION")
+    
+    try:
+            a = float(a_text)
+            b = float(b_text)
+    except ValueError:
+         return("ERROR", "", "INVALID_NUMBER")
+
+    if operation == "divide" and b == 0:
+         return("ERROR", "", "DIVISION_BY_ZERO")
+
+    return("OK", ops[operation](a,b), "")
+    
