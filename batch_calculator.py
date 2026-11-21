@@ -19,9 +19,12 @@ def process_calculation(operation, a_text, b_text):
     See the brief for the full contract. You may add small helper functions.
     """
     ops ={"add": add, "subtract": subtract, "multiply": multiply, "divide": divide}
+    operation = operation.strip()
+    a_text = a_text.strip()
+    b_text = b_text.strip()
 
     if operation not in ops:
-        return("ERROR", "", "UNKOWN_OPERATION")
+        return("ERROR", "", "UNKNOWN_OPERATION")
     
     try:
             a = float(a_text)
