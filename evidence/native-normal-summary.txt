@@ -1,0 +1,1 @@
+Processed 6 records: 6 succeeded, 0 failed.
