@@ -34,13 +34,16 @@ As well as the test_batch_calculator.py file and editing EVIDENCE.md]
 Plan this before fixing the chosen missing requirement or defect. An initially
 missing feature is acceptable; retain the test in the final suite.
 
-- Requirement and retained test: [R number, test file/function]
-- Expected result and actual failure: [your explanation]
-- Before/fix commits: [hashes]
-- Failing/passing local runs: [commands, outcomes and saved log paths]
-- Failing/passing CI runs: [URLs, matching commit hashes and saved files in evidence/]
-- CI diagnosis: [event, runner, job, failed step and useful log message]
-- Cause and implementation fix: [explain what changed and why]i don
+- Requirement and retained test: [R1 - Addition, test_batch_calculator.py -                                 test_proccess_addition]
+- Expected result and actual failure: [Expected result - "OK", 13, "" 
+                                       Actual failure - NotImplementedError]
+- Before/fix commits: [Before - cfd59fa3dd49c2a86973f0123cf929fd26928eac
+                       Fix - a2c88dae97497fed3ffa7de049d172f10743534f ]
+- Failing/passing local runs: [Command python3 -m pytest -v > evidence/local-before.txt 2>&1 Outcome - Test failed with NotImplementedError, Test passed Log Pathes - evidence/local-before.txt, evidence/local-after.txt ]
+- Failing/passing CI runs: [[URLs]Before -(https://github.com/thodges678/Calculator/actions/runs/44670624222) evidence/ci-before-commit.pdf, evidence/ci-before-commit-log-exert.txt
+After - URL https://github.com/thodges678/Calculator/actions/runs/44929071654 commit - a2c88dae97497fed3ffa7de049d172f10743534f, evidence/ci-after.pdf, evidence/ci-after.txt ]
+- CI diagnosis: [event- push , runner- ubuntu-latest, job- tests, failed step - Run the tests, Log message - NotImplementedError, Error: Process completed with exit code 1]
+- Cause and implementation fix: [Tests job raised a NotImplementedError as addition wasn't implemented. Procces_calculation function within batch_calculator.py was subsequently updated to accomdate the wanted behaviour. Tests assertion was unchanged and went from failing to passing between the two commits]
 
 ## 3. Repeatable checks and local hook
 
