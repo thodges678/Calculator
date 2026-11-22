@@ -11,7 +11,7 @@ The program prints Result: followed by the answer.
 Exit: Ctrl+c
 
 ## Test
-Run ./check.sh
+Run ./scripts/check.sh
 
 Expected results
 
