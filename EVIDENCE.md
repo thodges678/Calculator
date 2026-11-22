@@ -56,7 +56,11 @@ missing feature is acceptable; retain the test in the final suite.
 
 ## 3. Repeatable checks and local hook
 
-- Common check script: [path and invocation used locally and in CI]
+- Common check script: [
+    Path - scripts/check.sh. Run locally with ./scripts/check.sh
+    Ci calls it with ./scripts/check.sh after installing dependencies
+    The script runs the pytest tests on both calculator.py and batch_calculator.py. The set -e command ensures that the script exits with non-zero on the first failure.
+    Hook -]
 - Prerequisites and hook installation: [commands or README reference]
 - Blocked commit attempt: [short transcript, base commit and working-tree state]
 - Permitted commit after the fix: [short transcript and resulting hash]
